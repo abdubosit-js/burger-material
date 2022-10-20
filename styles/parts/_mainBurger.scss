@@ -1,0 +1,105 @@
+.burger_wrapper {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    .burger-left {
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+        
+        .counter-flex {
+            height: 40px;
+            margin-top: 50px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            button {
+                width: 80px;
+                height: 40px;
+                border: 2px solid yellow;
+                background-color: red;
+                color: yellow;
+                cursor: pointer;
+                font-size: 15px;
+                border-radius: 2px;
+                transition: 100ms;
+            }
+            button:active {
+                background-color: orange;
+                color: white;
+            }
+            span {
+                width: 100%;
+                max-width: 180px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+                color: white;
+            }
+        }
+    }
+    
+    .burger-right {
+        width: 100%;
+        height: 100vh;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        .burger-top {
+            width: 300px;
+            height: 90px;
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            background-color: rgb(255, 255, 255);
+            background-color: orange;
+        }
+        .burger-bottom {
+            width: 300px;
+            height: 50px;
+            background-color: orange;
+        }
+        
+        .burger-material {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .cabbage {
+            width: 300px;
+            height: 10px;
+            background-color: green;
+        }
+        .cutlet {
+            width: 300px;
+            height: 10px;
+            background-color: saddlebrown;
+        }
+        .chease {
+            width: 300px;
+            height: 10px;
+            background-color: rgb(220, 227, 39);
+        }
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+        background-color: orange;
+        border-radius: 50%;
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
