@@ -10,27 +10,32 @@
 </head>
 <body>
     <div class="burger_wrapper">
-        <div class="burger-left">
-            <div class="card" onclick="burger.card()">
-                <img src="assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        <div class="card" onclick="card()">
+            <img src="assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        </div>
+        <div class="open-card">
+            <div onclick="close()" id="close">
+                <img src="assets/close_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             </div>
+        </div>
+        <div class="burger-left">
             
             <div class="counter-flex">
                 <button>-</button>
                 <span>chease</span>
-                <button data-id="3" onclick="burger.addChease(event.target)">+</button>
+                <button data-id="3" onclick="addChease(event.target)">+</button>
             </div>
             
             <div class="counter-flex">
                 <button>-</button>
                 <span>cabbage</span>
-                <button data-id="3" onclick="burger.addCabbage(event.target)">+</button>
+                <button data-id="3" onclick="addCabbage(event.target)">+</button>
             </div>
 
             <div class="counter-flex">
                 <button>-</button>
                 <span>cutlet</span>
-                <button data-id="1" onclick="burger.addCutlet(event.target)">+</button>
+                <button data-id="1" onclick="addCutlet(event.target)">+</button>
             </div>
         </div>
         
