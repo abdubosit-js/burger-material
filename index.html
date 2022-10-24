@@ -11,41 +11,41 @@
 <body>
     <div class="burger_wrapper">
         <div class="card" onclick="card()">
+            <div class="length"></div>
             <img src="assets/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" alt="">
         </div>
         <div class="open-card">
             <div onclick="close()" id="close">
                 <img src="assets/close_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             </div>
+            <div class="price-cnt">
+                
+            </div>
         </div>
         <div class="burger-left">
             
             <div class="counter-flex">
-                <button>-</button>
+                <button data-id="2" onclick="removeProduct(event.target)">-</button>
                 <span>chease</span>
-                <button data-id="3" onclick="addChease(event.target)">+</button>
+                <button data-id="2" onclick="addProduct(event.target)">+</button>
             </div>
             
             <div class="counter-flex">
-                <button>-</button>
+                <button data-id="3" onclick="removeProduct(event.target)">-</button>
                 <span>cabbage</span>
-                <button data-id="3" onclick="addCabbage(event.target)">+</button>
+                <button data-id="3" onclick="addProduct(event.target)">+</button>
             </div>
 
             <div class="counter-flex">
-                <button>-</button>
+                <button data-id="1" onclick="removeProduct(event.target)">-</button>
                 <span>cutlet</span>
-                <button data-id="1" onclick="addCutlet(event.target)">+</button>
+                <button data-id="1" onclick="addProduct(event.target)">+</button>
             </div>
         </div>
         
         <div class="burger-right">
             <div class="burger-top"></div>
-            <div class="burger-material">
-                <!-- <div class="chease_cnt"></div>
-                <div class="cabbage_cnt"></div>
-                <div class="cutlet_cnt"></div> -->
-            </div>
+            <div class="burger-material"></div>
             <div class="burger-bottom"></div>
         </div>
     </div>
